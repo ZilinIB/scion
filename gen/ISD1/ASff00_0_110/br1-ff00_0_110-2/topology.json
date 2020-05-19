@@ -127,5 +127,17 @@
       }
     }
   },
-  "ColibriService": {}
+  "ColibriService": {},
+  "TimesyncService": {
+    "ts1-ff00_0_110-1": {
+      "Addrs": {
+        "IPv6": {
+          "Public": {
+            "Addr": "fd00:f00d:cafe::7f00:15",
+            "L4Port": 32000
+          }
+        }
+      }
+    }
+  },
 }
