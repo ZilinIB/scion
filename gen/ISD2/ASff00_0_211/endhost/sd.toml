@@ -1,0 +1,26 @@
+[general]
+id = "sd2-ff00_0_211"
+config_dir = "gen/ISD2/ASff00_0_211/endhost"
+reconnect_to_dispatcher = true
+
+[trust_db]
+backend = "sqlite"
+connection = "gen-cache/sd2-ff00_0_211.trust.db"
+
+[path_db]
+connection = "gen-cache/sd2-ff00_0_211.path.db"
+
+[sd]
+address = "[fd00:f00d:cafe::7f00:3b]:30255"
+
+[tracing]
+enabled = true
+debug = true
+agent = "172.17.0.1:6831"
+
+[metrics]
+prometheus = "[fd00:f00d:cafe::7f00:3b]:30455"
+
+[log.file]
+path = "logs/sd2-ff00_0_211.log"
+level = "debug"

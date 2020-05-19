@@ -1,0 +1,10 @@
+description = "Issuer certificate 2-ff00:0:210"
+version = 1
+issuing_grant_key_version = 1
+trc_version = 1
+optional_distribution_points = []
+
+[validity]
+  not_before = 1589893254
+  validity = "1y"
+

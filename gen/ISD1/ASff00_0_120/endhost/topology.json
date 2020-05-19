@@ -1,0 +1,176 @@
+{
+  "Attributes": [
+    "authoritative",
+    "core",
+    "issuing",
+    "voting"
+  ],
+  "ISD_AS": "1-ff00:0:120",
+  "MTU": 1472,
+  "Overlay": "UDP/IPv4",
+  "ControlService": {
+    "cs1-ff00_0_120-1": {
+      "Addrs": {
+        "IPv4": {
+          "Public": {
+            "Addr": "127.0.0.68",
+            "L4Port": 31014
+          }
+        }
+      }
+    }
+  },
+  "BorderRouters": {
+    "br1-ff00_0_120-1": {
+      "CtrlAddr": {
+        "IPv4": {
+          "Public": {
+            "Addr": "127.0.0.65",
+            "L4Port": 31016
+          }
+        }
+      },
+      "InternalAddrs": {
+        "IPv4": {
+          "PublicOverlay": {
+            "Addr": "127.0.0.65",
+            "OverlayPort": 31018
+          }
+        }
+      },
+      "Interfaces": {
+        "6": {
+          "Overlay": "UDP/IPv4",
+          "PublicOverlay": {
+            "Addr": "127.0.0.5",
+            "OverlayPort": 50000
+          },
+          "RemoteOverlay": {
+            "Addr": "127.0.0.4",
+            "OverlayPort": 50000
+          },
+          "Bandwidth": 1000,
+          "ISD_AS": "1-ff00:0:110",
+          "LinkTo": "CORE",
+          "MTU": 1472
+        },
+        "1": {
+          "Overlay": "UDP/IPv4",
+          "PublicOverlay": {
+            "Addr": "127.0.0.18",
+            "OverlayPort": 50000
+          },
+          "RemoteOverlay": {
+            "Addr": "127.0.0.19",
+            "OverlayPort": 50000
+          },
+          "Bandwidth": 1000,
+          "ISD_AS": "1-ff00:0:130",
+          "LinkTo": "CORE",
+          "MTU": 1472
+        }
+      }
+    },
+    "br1-ff00_0_120-2": {
+      "CtrlAddr": {
+        "IPv4": {
+          "Public": {
+            "Addr": "127.0.0.66",
+            "L4Port": 31020
+          }
+        }
+      },
+      "InternalAddrs": {
+        "IPv4": {
+          "PublicOverlay": {
+            "Addr": "127.0.0.66",
+            "OverlayPort": 31022
+          }
+        }
+      },
+      "Interfaces": {
+        "2": {
+          "Overlay": "UDP/IPv4",
+          "PublicOverlay": {
+            "Addr": "127.0.0.22",
+            "OverlayPort": 50000
+          },
+          "RemoteOverlay": {
+            "Addr": "127.0.0.23",
+            "OverlayPort": 50000
+          },
+          "Bandwidth": 1000,
+          "ISD_AS": "2-ff00:0:220",
+          "LinkTo": "CORE",
+          "MTU": 1350
+        },
+        "3": {
+          "Overlay": "UDP/IPv4",
+          "PublicOverlay": {
+            "Addr": "127.0.0.24",
+            "OverlayPort": 50000
+          },
+          "RemoteOverlay": {
+            "Addr": "127.0.0.25",
+            "OverlayPort": 50000
+          },
+          "Bandwidth": 1000,
+          "ISD_AS": "2-ff00:0:220",
+          "LinkTo": "CORE",
+          "MTU": 1400
+        },
+        "4": {
+          "Overlay": "UDP/IPv4",
+          "PublicOverlay": {
+            "Addr": "127.0.0.20",
+            "OverlayPort": 50000
+          },
+          "RemoteOverlay": {
+            "Addr": "127.0.0.21",
+            "OverlayPort": 50000
+          },
+          "Bandwidth": 1000,
+          "ISD_AS": "1-ff00:0:121",
+          "LinkTo": "CHILD",
+          "MTU": 1472
+        }
+      }
+    },
+    "br1-ff00_0_120-3": {
+      "CtrlAddr": {
+        "IPv4": {
+          "Public": {
+            "Addr": "127.0.0.67",
+            "L4Port": 31024
+          }
+        }
+      },
+      "InternalAddrs": {
+        "IPv4": {
+          "PublicOverlay": {
+            "Addr": "127.0.0.67",
+            "OverlayPort": 31026
+          }
+        }
+      },
+      "Interfaces": {
+        "5": {
+          "Overlay": "UDP/IPv4",
+          "PublicOverlay": {
+            "Addr": "127.0.0.9",
+            "OverlayPort": 50000
+          },
+          "RemoteOverlay": {
+            "Addr": "127.0.0.8",
+            "OverlayPort": 50000
+          },
+          "Bandwidth": 1000,
+          "ISD_AS": "1-ff00:0:111",
+          "LinkTo": "CHILD",
+          "MTU": 1472
+        }
+      }
+    }
+  },
+  "ColibriService": {}
+}

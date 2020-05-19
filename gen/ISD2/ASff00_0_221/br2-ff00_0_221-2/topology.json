@@ -1,0 +1,126 @@
+{
+  "Attributes": [],
+  "ISD_AS": "2-ff00:0:221",
+  "MTU": 1472,
+  "Overlay": "UDP/IPv4",
+  "ControlService": {
+    "cs2-ff00_0_221-1": {
+      "Addrs": {
+        "IPv4": {
+          "Public": {
+            "Addr": "127.0.0.132",
+            "L4Port": 31176
+          }
+        }
+      }
+    }
+  },
+  "BorderRouters": {
+    "br2-ff00_0_221-1": {
+      "CtrlAddr": {
+        "IPv4": {
+          "Public": {
+            "Addr": "127.0.0.129",
+            "L4Port": 31178
+          }
+        }
+      },
+      "InternalAddrs": {
+        "IPv4": {
+          "PublicOverlay": {
+            "Addr": "127.0.0.129",
+            "OverlayPort": 31180
+          }
+        }
+      },
+      "Interfaces": {
+        "2": {
+          "Overlay": "UDP/IPv4",
+          "PublicOverlay": {
+            "Addr": "127.0.0.47",
+            "OverlayPort": 50000
+          },
+          "RemoteOverlay": {
+            "Addr": "127.0.0.46",
+            "OverlayPort": 50000
+          },
+          "Bandwidth": 1000,
+          "ISD_AS": "2-ff00:0:220",
+          "LinkTo": "PARENT",
+          "MTU": 1472
+        }
+      }
+    },
+    "br2-ff00_0_221-2": {
+      "CtrlAddr": {
+        "IPv4": {
+          "Public": {
+            "Addr": "127.0.0.130",
+            "L4Port": 31182
+          }
+        }
+      },
+      "InternalAddrs": {
+        "IPv4": {
+          "PublicOverlay": {
+            "Addr": "127.0.0.130",
+            "OverlayPort": 31184
+          }
+        }
+      },
+      "Interfaces": {
+        "3": {
+          "Overlay": "UDP/IPv6",
+          "PublicOverlay": {
+            "Addr": "fd00:f00d:cafe::7f00:f",
+            "OverlayPort": 50000
+          },
+          "RemoteOverlay": {
+            "Addr": "fd00:f00d:cafe::7f00:e",
+            "OverlayPort": 50000
+          },
+          "Bandwidth": 1000,
+          "ISD_AS": "2-ff00:0:211",
+          "LinkTo": "PEER",
+          "MTU": 1472
+        }
+      }
+    },
+    "br2-ff00_0_221-3": {
+      "CtrlAddr": {
+        "IPv4": {
+          "Public": {
+            "Addr": "127.0.0.131",
+            "L4Port": 31186
+          }
+        }
+      },
+      "InternalAddrs": {
+        "IPv4": {
+          "PublicOverlay": {
+            "Addr": "127.0.0.131",
+            "OverlayPort": 31188
+          }
+        }
+      },
+      "Interfaces": {
+        "1": {
+          "Overlay": "UDP/IPv4",
+          "PublicOverlay": {
+            "Addr": "127.0.0.48",
+            "OverlayPort": 50000
+          },
+          "RemoteOverlay": {
+            "Addr": "127.0.0.49",
+            "OverlayPort": 50000
+          },
+          "Bandwidth": 1000,
+          "ISD_AS": "2-ff00:0:222",
+          "LinkTo": "CHILD",
+          "MTU": 1472
+        }
+      }
+    }
+  },
+  "ColibriService": {}
+}

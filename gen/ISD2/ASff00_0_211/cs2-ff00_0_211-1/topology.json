@@ -1,0 +1,161 @@
+{
+  "Attributes": [],
+  "ISD_AS": "2-ff00:0:211",
+  "MTU": 1472,
+  "Overlay": "UDP/IPv6",
+  "ControlService": {
+    "cs2-ff00_0_211-1": {
+      "Addrs": {
+        "IPv6": {
+          "Public": {
+            "Addr": "fd00:f00d:cafe::7f00:3a",
+            "L4Port": 31160
+          }
+        }
+      }
+    }
+  },
+  "BorderRouters": {
+    "br2-ff00_0_211-1": {
+      "CtrlAddr": {
+        "IPv6": {
+          "Public": {
+            "Addr": "fd00:f00d:cafe::7f00:39",
+            "L4Port": 31162
+          }
+        }
+      },
+      "InternalAddrs": {
+        "IPv6": {
+          "PublicOverlay": {
+            "Addr": "fd00:f00d:cafe::7f00:39",
+            "OverlayPort": 31164
+          }
+        }
+      },
+      "Interfaces": {
+        "5": {
+          "Overlay": "UDP/IPv6",
+          "PublicOverlay": {
+            "Addr": "fd00:f00d:cafe::7f00:7",
+            "OverlayPort": 50000
+          },
+          "RemoteOverlay": {
+            "Addr": "fd00:f00d:cafe::7f00:6",
+            "OverlayPort": 50000
+          },
+          "Bandwidth": 1000,
+          "ISD_AS": "1-ff00:0:111",
+          "LinkTo": "PEER",
+          "MTU": 1472
+        },
+        "6": {
+          "Overlay": "UDP/IPv4",
+          "PublicOverlay": {
+            "Addr": "127.0.0.15",
+            "OverlayPort": 50000
+          },
+          "RemoteOverlay": {
+            "Addr": "127.0.0.14",
+            "OverlayPort": 50000
+          },
+          "Bandwidth": 1000,
+          "ISD_AS": "1-ff00:0:111",
+          "LinkTo": "PEER",
+          "MTU": 1472
+        },
+        "7": {
+          "Overlay": "UDP/IPv4",
+          "PublicOverlay": {
+            "Addr": "127.0.0.37",
+            "OverlayPort": 50000
+          },
+          "RemoteOverlay": {
+            "Addr": "127.0.0.36",
+            "OverlayPort": 50000
+          },
+          "Bandwidth": 1000,
+          "ISD_AS": "2-ff00:0:210",
+          "LinkTo": "PARENT",
+          "MTU": 1472
+        },
+        "8": {
+          "Overlay": "UDP/IPv4",
+          "PublicOverlay": {
+            "Addr": "127.0.0.39",
+            "OverlayPort": 50000
+          },
+          "RemoteOverlay": {
+            "Addr": "127.0.0.38",
+            "OverlayPort": 50000
+          },
+          "Bandwidth": 1000,
+          "ISD_AS": "2-ff00:0:210",
+          "LinkTo": "PARENT",
+          "MTU": 1472
+        },
+        "1": {
+          "Overlay": "UDP/IPv6",
+          "PublicOverlay": {
+            "Addr": "fd00:f00d:cafe::7f00:e",
+            "OverlayPort": 50000
+          },
+          "RemoteOverlay": {
+            "Addr": "fd00:f00d:cafe::7f00:f",
+            "OverlayPort": 50000
+          },
+          "Bandwidth": 1000,
+          "ISD_AS": "2-ff00:0:221",
+          "LinkTo": "PEER",
+          "MTU": 1472
+        },
+        "2": {
+          "Overlay": "UDP/IPv4",
+          "PublicOverlay": {
+            "Addr": "127.0.0.40",
+            "OverlayPort": 50000
+          },
+          "RemoteOverlay": {
+            "Addr": "127.0.0.41",
+            "OverlayPort": 50000
+          },
+          "Bandwidth": 1000,
+          "ISD_AS": "2-ff00:0:212",
+          "LinkTo": "CHILD",
+          "MTU": 1472
+        },
+        "3": {
+          "Overlay": "UDP/IPv4",
+          "PublicOverlay": {
+            "Addr": "127.0.0.42",
+            "OverlayPort": 50000
+          },
+          "RemoteOverlay": {
+            "Addr": "127.0.0.43",
+            "OverlayPort": 50000
+          },
+          "Bandwidth": 1000,
+          "ISD_AS": "2-ff00:0:212",
+          "LinkTo": "CHILD",
+          "MTU": 1472
+        },
+        "4": {
+          "Overlay": "UDP/IPv4",
+          "PublicOverlay": {
+            "Addr": "127.0.0.44",
+            "OverlayPort": 50000
+          },
+          "RemoteOverlay": {
+            "Addr": "127.0.0.45",
+            "OverlayPort": 50000
+          },
+          "Bandwidth": 1000,
+          "ISD_AS": "2-ff00:0:222",
+          "LinkTo": "CHILD",
+          "MTU": 1472
+        }
+      }
+    }
+  },
+  "ColibriService": {}
+}

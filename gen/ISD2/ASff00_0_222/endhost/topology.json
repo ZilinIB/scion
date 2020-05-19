@@ -1,0 +1,91 @@
+{
+  "Attributes": [],
+  "ISD_AS": "2-ff00:0:222",
+  "MTU": 1472,
+  "Overlay": "UDP/IPv6",
+  "ControlService": {
+    "cs2-ff00_0_222-1": {
+      "Addrs": {
+        "IPv6": {
+          "Public": {
+            "Addr": "fd00:f00d:cafe::7f00:53",
+            "L4Port": 31190
+          }
+        }
+      }
+    }
+  },
+  "BorderRouters": {
+    "br2-ff00_0_222-1": {
+      "CtrlAddr": {
+        "IPv6": {
+          "Public": {
+            "Addr": "fd00:f00d:cafe::7f00:51",
+            "L4Port": 31192
+          }
+        }
+      },
+      "InternalAddrs": {
+        "IPv6": {
+          "PublicOverlay": {
+            "Addr": "fd00:f00d:cafe::7f00:51",
+            "OverlayPort": 31194
+          }
+        }
+      },
+      "Interfaces": {
+        "301": {
+          "Overlay": "UDP/IPv4",
+          "PublicOverlay": {
+            "Addr": "127.0.0.45",
+            "OverlayPort": 50000
+          },
+          "RemoteOverlay": {
+            "Addr": "127.0.0.44",
+            "OverlayPort": 50000
+          },
+          "Bandwidth": 1000,
+          "ISD_AS": "2-ff00:0:211",
+          "LinkTo": "PARENT",
+          "MTU": 1472
+        }
+      }
+    },
+    "br2-ff00_0_222-2": {
+      "CtrlAddr": {
+        "IPv6": {
+          "Public": {
+            "Addr": "fd00:f00d:cafe::7f00:52",
+            "L4Port": 31196
+          }
+        }
+      },
+      "InternalAddrs": {
+        "IPv6": {
+          "PublicOverlay": {
+            "Addr": "fd00:f00d:cafe::7f00:52",
+            "OverlayPort": 31198
+          }
+        }
+      },
+      "Interfaces": {
+        "302": {
+          "Overlay": "UDP/IPv4",
+          "PublicOverlay": {
+            "Addr": "127.0.0.49",
+            "OverlayPort": 50000
+          },
+          "RemoteOverlay": {
+            "Addr": "127.0.0.48",
+            "OverlayPort": 50000
+          },
+          "Bandwidth": 1000,
+          "ISD_AS": "2-ff00:0:221",
+          "LinkTo": "PARENT",
+          "MTU": 1472
+        }
+      }
+    }
+  },
+  "ColibriService": {}
+}

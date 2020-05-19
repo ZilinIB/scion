@@ -1,0 +1,24 @@
+[primary]
+
+[issuer_cert]
+
+[as_cert]
+  [as_cert.encryption]
+    [as_cert.encryption.1]
+      algorithm = "curve25519xsalsa20poly1305"
+      [as_cert.encryption.1.validity]
+        not_before = 1589893254
+        validity = "1y"
+  [as_cert.revocation]
+    [as_cert.revocation.1]
+      algorithm = "ed25519"
+      [as_cert.revocation.1.validity]
+        not_before = 1589893254
+        validity = "1y"
+  [as_cert.signing]
+    [as_cert.signing.1]
+      algorithm = "ed25519"
+      [as_cert.signing.1.validity]
+        not_before = 1589893254
+        validity = "1y"
+

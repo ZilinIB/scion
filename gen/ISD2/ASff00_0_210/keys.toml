@@ -1,0 +1,48 @@
+[primary]
+  [primary.issuing_grant]
+    [primary.issuing_grant.1]
+      algorithm = "ed25519"
+      [primary.issuing_grant.1.validity]
+        not_before = 1589893254
+        validity = "1y"
+  [primary.voting_offline]
+    [primary.voting_offline.1]
+      algorithm = "ed25519"
+      [primary.voting_offline.1.validity]
+        not_before = 1589893254
+        validity = "1y"
+  [primary.voting_online]
+    [primary.voting_online.1]
+      algorithm = "ed25519"
+      [primary.voting_online.1.validity]
+        not_before = 1589893254
+        validity = "1y"
+
+[issuer_cert]
+  [issuer_cert.issuing]
+    [issuer_cert.issuing.1]
+      algorithm = "ed25519"
+      [issuer_cert.issuing.1.validity]
+        not_before = 1589893254
+        validity = "1y"
+
+[as_cert]
+  [as_cert.encryption]
+    [as_cert.encryption.1]
+      algorithm = "curve25519xsalsa20poly1305"
+      [as_cert.encryption.1.validity]
+        not_before = 1589893254
+        validity = "1y"
+  [as_cert.revocation]
+    [as_cert.revocation.1]
+      algorithm = "ed25519"
+      [as_cert.revocation.1.validity]
+        not_before = 1589893254
+        validity = "1y"
+  [as_cert.signing]
+    [as_cert.signing.1]
+      algorithm = "ed25519"
+      [as_cert.signing.1.validity]
+        not_before = 1589893254
+        validity = "1y"
+

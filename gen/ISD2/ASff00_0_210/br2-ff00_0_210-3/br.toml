@@ -1,0 +1,10 @@
+[general]
+id = "br2-ff00_0_210-3"
+config_dir = "gen/ISD2/ASff00_0_210/br2-ff00_0_210-3"
+
+[metrics]
+prometheus = "[127.0.0.115]:30442"
+
+[log.file]
+path = "logs/br2-ff00_0_210-3.log"
+level = "debug"

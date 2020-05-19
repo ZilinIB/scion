@@ -12,7 +12,6 @@ Thumbs.db
 #########################
 /logs/*
 !/logs/.keepme
-/gen/
 /gen-cache/
 /gen-certs/
 /traces/

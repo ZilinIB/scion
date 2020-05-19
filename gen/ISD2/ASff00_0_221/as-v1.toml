@@ -1,0 +1,13 @@
+description = "AS certificate 2-ff00:0:221"
+version = 1
+signing_key_version = 1
+encryption_key_version = 1
+revocation_key_version = 1
+issuer_ia = "2-ff00:0:220"
+issuer_cert_version = 1
+optional_distribution_points = []
+
+[validity]
+  not_before = 1589893254
+  validity = "1y"
+
